@@ -1,10 +1,7 @@
 import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-export default function App() {
-  return (
-    <div style={{ padding: 20 }}>
-      <h1>Cheating Daddy</h1>
-      <p>Frontend migrated from Lit to React</p>
-    </div>
-  );
-}
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
